@@ -2,7 +2,7 @@
 
 Check password strength against several rules. Includes ActiveRecord/ActiveModel support.
 
-<a href="https://travis-ci.org/fnando/password_strength"><img src="https://travis-ci.org/fnando/password_strength.svg" alt="Build Status" /></a>
+![Build Status](https://github.com/persona-id/password_strength/actions/workflows/ci.yml/badge.svg?branch=master)
 
 Validates the strength of a password according to several rules:
 
