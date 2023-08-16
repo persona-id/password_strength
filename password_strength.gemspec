@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name                  = "password_strength"
   s.version               = PasswordStrength::Version::STRING
   s.platform              = Gem::Platform::RUBY
-  s.required_ruby_version = ">= 1.9"
+  s.required_ruby_version = ">= 2.7"
   s.authors               = ["Nando Vieira"]
   s.email                 = ["fnando.vieira@gmail.com"]
   s.homepage              = "http://github.com/fnando/password_strength"
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency "activemodel"
+  s.add_dependency "activemodel", ">= 6.1", "< 7.1"
 
   s.add_development_dependency "rake"
   s.add_development_dependency "minitest"
