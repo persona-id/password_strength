@@ -2,3 +2,12 @@ source "https://rubygems.org"
 gemspec path: ".."
 
 gem "activemodel", "~> 7.0.0"
+# See https://github.com/rails/rails/issues/54263 for why this is pinned back.
+# Although fixed on the 7-0-stable branch, it hasn't been released.
+gem "concurrent-ruby", "< 1.3.5"
+
+if Gem::Requirement.create(">= 3.4.0").satisfied_by?(Gem::Version.new(RUBY_VERSION))
+  gem "base64"
+  gem "bigdecimal"
+  gem "mutex_m"
+end
