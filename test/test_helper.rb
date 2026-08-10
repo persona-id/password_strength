@@ -12,7 +12,6 @@ else
   Minitest::Test = MiniTest::Unit::TestCase
 end
 
-require "ostruct"
 require "active_model"
 require "active_support/all"
 
